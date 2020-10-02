@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Auth</title>
+
+    
+     <!-- Font Awesome -->
+     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+     <!-- Google fonts-->
+     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+
+     <!-- bootstrap -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <!-- stylesheet  -->
+     <link rel="stylesheet" href="css/styles.css">
+
+     
+</head>
+<body>
+
+
+    <div class="container container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Student Login</h4>
+
+                <div id="firebaseui-auth-container"></div>
+
+                <form action=" " id="log-in-form">
+                    
+
+
+                    <div class="form-group">
+                        <input type="email" id="studentemail" name ="studentemail" placeholder="Student Email" class="form-control" >
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <input type="password" id="password" name ="password" placeholder="password" class="form-control" >
+                    </div>
+
+                    <div class="form-group">
+                        <!-- <button type="" class="btn-sign-up btn-secondary btn-sm"> <a href="signup.html">SIGN UP</a> </button>  -->
+                        <button type="submit " id="btn-log-in-email" class="btn-sm"> LOG IN </button>
+
+                        <button type="" id= "btn-log-in-google" class=" btn-secondary btn-sm" >LOG IN WITH GOOGLE </button>
+                     </div>
+
+                   
+                   
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Firebase library implementations -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-storage.js"></script>
+
+    <script src="js/login.js"></script>
+
+</body>
+</html>
